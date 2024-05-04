@@ -1,5 +1,4 @@
 import Footer from "@/components/bottom/Footer";
-import Info from "@/components/top/Info";
 import Navigation from "@/components/top/Navigation";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -20,9 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Info title="title" content="content" />
+        {/* <Info title="title" content="content" /> */}
         <Navigation />
-        <main className="min-h-[calc(100vh-2.75rem)]">{children}</main>
+        <main className="min-h-[calc(100vh-2.75rem)] p-4">{children}</main>
         <Footer />
       </body>
     </html>
